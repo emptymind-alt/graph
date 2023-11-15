@@ -1,13 +1,105 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-width: 630px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#container {
+  padding-left: 200px;
+  padding-right: 0px;
+}
+
+#container .column {
+  position: relative;
+  float: left;
+
+}
+
+#center {
+  padding: 10px 20px;
+  width: 100%;
+  
+}
+
+#left {
+  width: 180px;
+  padding: 0 10px;
+  right: 240px;
+  margin-left: -100%;
+}
+
+
+
+#footer {
+  clear: both;
+}
+
+/* IE hack */
+* html #left {
+  left: 150px;
+}
+
+/* Make the columns the same height as each other */
+#container {
+  overflow: hidden;
+  width:100%;
+}
+
+#container .column {
+  padding-bottom: 1001em;
+  margin-bottom: -1000em;
+  
+}
+
+/* Fix for the footer */
+* html body {
+  overflow: hidden;
+}
+
+ 
+
+
+/* Aesthetics */
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Sans-serif;
+  line-height: 1.5em;
+  cursor: pointer;
+}
+
+p {
+  color: #555;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  color: darkgreen;
+  text-decoration: none;
+}
+
+#header, #footer {
+  font-size: large;
+  padding: 0.3em;
+  background:  #FFFFFF;
+}
+
+#left {
+  background:  #FFFFFF;
+}
+
+
+#center {
+  background: #ECF0F1;
+  margin-right: 0px;
+  place-content:  space-between;
+}
+
+#container .column {
+  padding-top: 1em;
+  
+  place-content:  space-between;
 }

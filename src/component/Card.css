@@ -1,0 +1,74 @@
+#card{
+    max-width: 32rem;
+    min-width: 32rem;
+    margin-left: 40px;
+    margin-bottom: 25px;
+  border: 3px solid rgba(243, 245, 243, 0.795);
+  padding: 5px;
+  justify-content: space-around;
+  max-height: 28rem;
+  min-height: 28rem;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:30px;
+  background-color:  #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+ 
+
+   
+}
+.card-header{
+    border-bottom: 3px solid rgb(243, 245, 243);
+    text-decoration: solid black;
+    margin-bottom: 3px;
+      text-align: left;
+  
+}
+
+.drop{
+    padding-left: 20px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+.sale{
+    margin-top: 0;
+    padding-top: 0;
+}
+.plot {
+    margin-top: 0px;
+    color:rgb(0, 128, 28);
+  fill: currentColor;
+  position: relative;
+ 
+}
+
+
+th{
+    word-spacing: 45px;
+}
+h5{
+    margin-bottom: 4px;
+    padding-left: 50px;
+    word-spacing: 60px;
+}
+.bar{
+    padding-left: 30px;
+    
+}
+.stack{
+word-spacing: 20px;
+padding-left: 100px;
+}
+.tin{
+    color: #377eb8;
+    fill: currentColor;
+    padding-left: 250px;
+}
+.sin{
+    color: #4DB04A;
+    fill: currentColor;
+    padding-left: 30px;
+}
