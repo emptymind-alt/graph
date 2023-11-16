@@ -17,7 +17,7 @@ class MyComponent extends React.Component {
 
     d3.csv("https://raw.githubusercontent.com/emptymind-alt/Asidus/main/rusk.csv").then((data) => {
       const allGroup = new Set(data.map(d => d.month));
-      d3.select("#system").style("background-color", "red");
+     
       d3.select("#selectButton")
         .selectAll('myOptions')
         .data(Array.from(allGroup))
@@ -33,7 +33,6 @@ class MyComponent extends React.Component {
       const x = d3.scaleLinear()
         .domain(d3.extent(data, (d) => d.date))
         .range([0, width]);
-//backgroud
      
       svg.append("g")
         .attr("transform", `translate(0, ${height})`)

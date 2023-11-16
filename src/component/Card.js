@@ -1,12 +1,9 @@
 import './Card.css';
-
 import ReactDOM from "react-dom";
 import MyComponent from "./MyComponent.jsx";
 import MyComponent1 from "./MyComponent1.jsx";
 import Card1 from "./Card1.js";
-import Card2 from "./Card2.js";
 import Card4 from "./Card4.js";
-import Cardd from "./Cardd.js";
 import Modall from './Modall.js';
 
 
@@ -19,6 +16,7 @@ const sdata=[ "9"," ","10"," ","11"," ","12"," ","13"," ","14"," ","15"," ","16"
   
     return(
     <>
+    {/*first card*/ }
     <div class="card text-white bg-primary mb-3" id="card">
     <div class="card-header"><b>  Checking Account</b>   <select id="system" className='drop' >
     <option value="custom">Custom</option>
@@ -35,6 +33,7 @@ const sdata=[ "9"," ","10"," ","11"," ","12"," ","13"," ","14"," ","15"," ","16"
     </tr></table>
   </div>
 </div>
+ {/*second card*/ }
 <div class="card text-white bg-secondary mb-3"id="card" >
     
   <div class="card-header"><b> Invoices Owed to You</b>   <Modall/></div>
@@ -42,6 +41,7 @@ const sdata=[ "9"," ","10"," ","11"," ","12"," ","13"," ","14"," ","15"," ","16"
   <Card1/>
     </div>
 </div>
+ {/*Third card*/ }
 <div class="card text-white bg-success mb-3" id="card" >
   <div class="card-header"><b>Total CashFlow </b> 
   
@@ -58,6 +58,7 @@ const sdata=[ "9"," ","10"," ","11"," ","12"," ","13"," ","14"," ","15"," ","16"
     <MyComponent1/>
   </div>
 </div>
+ {/*Fourth card*/ }
 <div class="card text-white bg-danger mb-3" id="card" >
   <div class="card-header"><b>Account WatchList</b></div>
    <div className='sale'>
