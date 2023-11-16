@@ -1,6 +1,6 @@
 import React from 'react';
 import * as d3 from 'd3';
-import ReactDOM from 'react-dom';
+
 
 const margin = {top: 10, right: 30, bottom: 30, left: 60};
 const width = 450 - margin.left - margin.right;
@@ -8,13 +8,14 @@ const height = 250 - margin.top - margin.bottom;
 
 class MyComponent extends React.Component {
   componentDidMount() {
+    // append the svg object to the body of the page
     const svg = d3.select("#my_dataviz")
       .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
-
+   // Parse the Data
     d3.csv("https://raw.githubusercontent.com/emptymind-alt/Asidus/main/rusk.csv").then((data) => {
       const allGroup = new Set(data.map(d => d.month));
      
@@ -29,7 +30,8 @@ class MyComponent extends React.Component {
       const myColor = d3.scaleOrdinal()
         .domain(Array.from(allGroup))
         .range(d3.schemeSet2);
-
+  
+  // Add X axis
       const x = d3.scaleLinear()
         .domain(d3.extent(data, (d) => d.date))
         .range([0, width]);
@@ -37,7 +39,7 @@ class MyComponent extends React.Component {
       svg.append("g")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).ticks(7)).remove();
-
+ // Add Y axis
       const y = d3.scaleLinear()
         .domain([0, d3.max(data, d => +d.n)])
         .range([height, 0]);
