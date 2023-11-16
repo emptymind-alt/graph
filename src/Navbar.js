@@ -42,13 +42,13 @@ const Navbar =()=>{
             <MenuItem 
             
             className="con"
-            icon={<DashboardIcon/>} href="card"> Dashboard</MenuItem>
+            icon={<DashboardIcon/>} element={Link} href='/'> Dashboard</MenuItem>
          
-            <MenuItem icon={<AccountBalanceWalletIcon/>} activeClassName ="menu_active"> Account</MenuItem>
-            <MenuItem icon={<MonetizationOnIcon />} href="Home"> Payroll</MenuItem>
-            <MenuItem icon={<SummarizeIcon />} href="card"> Reports</MenuItem>
-            <MenuItem icon={< PersonIcon/>} href="Home"> Advisor</MenuItem>
-            <MenuItem icon={<ContactsIcon />} href="card"> Contacts</MenuItem>
+            <MenuItem icon={<AccountBalanceWalletIcon/>}element={Link} href='/' > Account</MenuItem>
+            <MenuItem icon={<MonetizationOnIcon />}element={Link} href='/'> Payroll</MenuItem>
+            <MenuItem icon={<SummarizeIcon />} element={Link} href='/'> Reports</MenuItem>
+            <MenuItem icon={< PersonIcon/>} element={Link} href='/'> Advisor</MenuItem>
+            <MenuItem icon={<ContactsIcon />} element={Link} href='/'> Contacts</MenuItem>
             
             
           </Menu>

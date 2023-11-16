@@ -20,7 +20,7 @@ const sdata=[ "9"," ","10"," ","11"," ","12"," ","13"," ","14"," ","15"," ","16"
     return(
     <>
     <div class="card text-white bg-primary mb-3" id="card">
-    <div class="card-header"><b>  Checking Account</b>   <select name="system" className='drop' >
+    <div class="card-header"><b>  Checking Account</b>   <select id="system" className='drop' >
     <option value="custom">Custom</option>
     <option value="Manual">Manual</option>
     <option value="Manage">Manage</option>
